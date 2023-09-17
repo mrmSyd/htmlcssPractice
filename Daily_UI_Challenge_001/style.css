@@ -1,14 +1,14 @@
  body{
-    background-color: bisque;
+    background-color: rgb(183, 192, 244);
  }
 .card{
     display: flex;
     height: 60vh;
     width: 25%;
-    background-color: white;
-    border-radius: 10px;
+    /* background-color: white; */
+    /* border-radius: 10px; */
     box-shadow: 7px 7px 10px 0px #979494;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 20vh;
     margin-left: 35%;
     justify-content: center;
@@ -16,33 +16,90 @@
     position: relative;
 }
 
-.card-top{
-    border: 2px solid black;
+@media only screen and (max-width: 1200px) and (min-width: 1000px){
+    .card {
+        height: 60vh;
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 900px){
+    .card {
+        height: 60vh;
+        width: 30%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 899px){
+    .card {
+        height: 60vh;
+        width: 35%;
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .card {
+        height: 60vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+.card-top{ 
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: orange;
+    height: 65px;
+    background-color: rgb(220, 218, 215);
     display: flex;
     justify-content: center;
 }
 
 .card-content{
-    border: 2px solid black;
-    position: relative;
+    position: initial;
+    padding-top: 75px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: rebeccapurple;
+    top: 18px;
+    background-color: rgb(220, 218, 215);
 }
 
-.car-bottom{
-    border: 2px solid black;
-    background-color: indianred;
-    position: absolute;
+.card-bottom{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(220, 218, 215);
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.footer-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(220, 218, 215);
+}
+.footer-card a {
+    font-size: 30px;
+    color: black;
+}
+.bottom{
     bottom: 0;
+    background-color: rgb(220, 218, 215);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .input-field{
     padding: 5px 10px;
     width: 80%;
@@ -51,12 +108,16 @@
     border: 1px solid #e3e0e0;
     box-shadow: 2px 2px 5px 0px #979494;
 }
-
+.card-content input[type=text]{
+    margin-top: 10px;
+}
 .btn{
     padding: 5px 10px;
     width: 100px;
     font-size: larger;
-    background-color: green ;
+    background-color: rgb(240, 16, 16) ;
     color: white;
     box-shadow: 2px 2px 5px 0px rgb(194, 222, 194);
+    border-radius: 2px;
+    border: none;
 }
